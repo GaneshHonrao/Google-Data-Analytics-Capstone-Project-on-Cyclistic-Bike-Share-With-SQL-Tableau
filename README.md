@@ -49,7 +49,7 @@ Note - This is public data that you can use to explore how different customer ty
 ### Data Loading
 1. **File Naming Convention:** Files are named in the format of YYYYMM-divvy.csv.
 2. **Data Integration into 'combined_Table':** The data has been uploaded and consolidated into a unified table named 'combined_Table'. (To see the process of data upload and consolidation into a single table, please click [here](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/Cyclistic%20-%20Data%20collection%20and%20combination%20process%20in%20MySQL%20.md).)
-## Data Observation 
+### Data Observation 
 
 #### Size of Data (Rows & Column)  
 ![Pasted image 20230724165105](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3d64d46d-2cdf-4bbc-a93f-a1cd0e8963de)
@@ -88,11 +88,11 @@ There are 5829030 no of rows and 13 no of columns observed in 'combined_Table' t
 ![Pasted image 20230731153704](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/756f26ff-acb3-4606-bd5f-faec6fff2bda)
 
 ### Total count and percent of inconsistent values
-- **Total row count of inconsistent values**  
+- **Total inconsistent values count**  
 Total count of rows including *'Total no of blank or null values'*, *'Outlier or false value of ride length longer than a day'* and *'Outlier or false value of ride length less than a minute'*.  
 ![Pasted image 20230731154619](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3c9f6184-3312-4042-889c-033fb9b34f72)
 
-- **Total row percent of inconsistent values**  
+- **Total inconsistent values percentage**  
 Percent of rows including *'Total no of blank or null values'*, *'Outlier or false value of ride length longer than a day'* and *'Outlier or false value of ride length less than a minute'*.  
 ![Pasted image 20230731155116](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/18f299df-e773-4cd9-a898-4e0e8ac99b1f)
 
