@@ -50,7 +50,7 @@ Note - This is public data that you can use to explore how different customer ty
 1. **File Naming Convention:** Files are named in the format of YYYYMM-divvy.csv.
 2. **Data Integration into 'combined_Table':** The data has been uploaded and consolidated into a unified table named 'combined_Table'. (To see the process of data upload and consolidation into a single table, please [click here](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/Cyclistic%20-%20Data%20collection%20and%20combination%20process%20in%20MySQL%20.md).)
 ### Data Observation 
-
+[Data Observation SQL Queries](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/Cyclistic%20-%20Data%20Observation%20SQL%20Queries.md)
 #### Size of Data (Rows & Column)  
 ![Pasted image 20230724165105](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3d64d46d-2cdf-4bbc-a93f-a1cd0e8963de)
 
