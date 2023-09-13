@@ -1,0 +1,154 @@
+# Data Cleaning
+## Removing blank values
+### Before deleting blank values (table row count)
+```sql
+SELECT COUNT(*) AS total_row FROM combined_Table;
+```
+![Pasted image 20230724165105](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/b37eab30-0043-446a-987e-83e1af04cae0)
+
+
+### Deletion of blank values
+```sql
+DELETE FROM combined_Table
+WHERE 
+	start_station_name = '' OR 
+	start_station_id = '' OR 
+	end_station_name = '' OR 
+	end_station_id = '' OR 
+	end_lat = '' OR 
+	end_lng = '';
+```
+![Pasted image 20230731114323](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/21d4932b-224f-4a82-9577-4f3f2bac001b)
+
+
+### After deleting blank rows (table row count)
+```sql
+SELECT COUNT(*) FROM combined_Table;
+```
+![Pasted image 20230731115932](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/6fd2e12e-171b-4ae1-b56b-b8086e169011)
+
+
+## Removing outliers or false values
+### Deletion of outlier or false value from ride length (ended_at - started_at)
+- Deletion of rows longer than a day
+```sql
+DELETE FROM combined_Table 
+WHERE TIMESTAMPDIFF(HOUR, started_at, ended_at) >= 24;
+```
+![Pasted image 20230731162050](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/924368f3-cf84-4080-b2ed-8cd8bdf753f1)
+
+
+- Deletion of rows less than a minute
+```sql
+DELETE FROM combined_Table
+WHERE TIMESTAMPDIFF(SECOND, started_at, ended_at) <= 60;
+```
+![Pasted image 20230731162729](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/283f63c1-a729-42b0-95ee-5a02bf88a14a)
+
+
+## Size of data after cleaning 
+![Pasted image 20230731163315](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/a603dcae-3931-4d4b-95d8-09fdc3acc8dc)
+
+
+---
+# Data Transformation
+## Creation of 4 new columns
+1. Creation of ride_length column
+```sql
+-- Insert new column with TIME data type hh:mm:ss
+ALTER TABLE combined_Table
+ADD COLUMN ride_length TIME;
+
+-- subtract ended_at value form started_at in ride-length column
+UPDATE combined_Table
+SET ride_length = TIMEDIFF(ended_at, started_at);
+```
+
+2. Creation of month column
+```sql
+-- Insert new column month with VARCHAR(2) data type
+ALTER TABLE combined_Table ADD COLUMN month VARCHAR(2);
+
+-- extracting month values (in two-digit format) for each row in the table
+UPDATE combined_Table SET month = DATE_FORMAT(started_at, '%m');
+```
+
+3. Creation of day_of_week column
+```sql
+-- Insert new column day_of_week with INT data type
+ALTER TABLE combined_Table 
+ADD COLUMN day_of_week INT;
+
+-- populate the new `day_of_week` column by extracting the day of the week from the `started_at` column
+UPDATE combined_Table 
+SET day_of_week = DAYOFWEEK(started_at);
+
+/*
+The `DAYOFWEEK()` function in MySQL returns an integer value representing the day of the week for a given date or datetime. The numbering convention used by MySQL is as follows:
+
+1: Sunday
+2: Monday
+3: Tuesday
+4: Wednesday
+5: Thursday
+6: Friday
+7: Saturday
+*/
+```
+
+4. Creation of hour_in_day column
+```sql
+-- Insert new column hour_in_day with INT data type
+ALTER TABLE combined_Table 
+ADD COLUMN hour_in_day INT;
+
+-- populate the new `hour_in_day` column by extracting the hour in the day from the `started_at` column
+UPDATE combined_Table 
+SET hour_in_day = DATE_FORMAT(started_at, '%H');
+
+-- The format specifier `%H` returns the hour in 24-hour format (00 to 23)
+```
+
+---
+# Exporting final table in csv format
+
+Step 1: Get the default Path to export file by executing either of below code chunk,
+```sql
+SELECT @@global.secure_file_priv;
+```
+or 
+```sql
+SHOW VARIABLES LIKE "secure_file_priv";
+```
+
+The result will showcase the path something like this - 
+`C:\ProgramData\MySQL\MySQL Server 8.0\Uploads`
+
+Step 2: Copy this default path and past it in below query after OUTFILE and swap all backward slash to forward.
+```sql
+SELECT 
+	'ride_id',
+	'rideable_type',
+	'started_at',
+	'ended_at',
+	'start_station_name',
+	'start_station_id',
+	'end_station_name',
+	'end_station_id',
+	'start_lat',
+	'start_lng',
+	'end_lat',
+	'end_lng',
+	'member_casual',
+	'ride_length',
+	'month',
+	'day_of_week',
+	'hour_in_day'
+UNION ALL
+SELECT * FROM cyclistic.`202206-divvy` INTO OUTFILE 'C:/ProgramData/MySQL/MySQL Server 8.0/Uploads/cyclistic_data.csv' 
+FIELDS TERMINATED BY ',' 
+ENCLOSED BY '"' 
+LINES TERMINATED BY '\n';
+```
+
+---
