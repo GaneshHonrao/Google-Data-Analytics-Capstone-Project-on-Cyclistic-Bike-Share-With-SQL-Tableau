@@ -1,4 +1,4 @@
-# Data Cleaning
+# Data Cleaning 
 ## Removing blank values
 ### Before deleting blank values (table row count)
 ```sql
