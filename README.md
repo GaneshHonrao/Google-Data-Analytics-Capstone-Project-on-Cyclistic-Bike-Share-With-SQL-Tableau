@@ -24,10 +24,10 @@
 # Project Kickoff 
 ## Ask Phase: Business Questions & Key Stakeholders
 
-- Three questions will guide the future marketing program:
-	1. How do annual members and casual riders use Cyclistic bikes differently?
-	2. Why would casual riders buy Cyclistic annual memberships?
-	3. How can Cyclistic use digital media to influence casual riders to become members? 
+- Three questions will guide the future marketing program:  
+	1. How do annual members and casual riders use Cyclistic bikes differently?  
+	2. Why would casual riders buy Cyclistic annual memberships?  
+	3. How can Cyclistic use digital media to influence casual riders to become members?  
 
 Moreno has assigned me the first question to answer: How do annual members and casual riders use Cyclistic bikes differently?
 ## Prepare Phase: Data Gathering & EDA Report
@@ -35,7 +35,7 @@ Moreno has assigned me the first question to answer: How do annual members and c
 
 I plan to utilize Cyclistic's archived trip information to conduct an analysis and detect patterns. This data can be obtained through the [divvy_tripdata](https://divvy-tripdata.s3.amazonaws.com/index.html) source, with permission granted by Motivate International Inc. pursuant to their [licensing agreement](https://ride.divvybikes.com/data-license-agreement).
 Note - This is public data that you can use to explore how different customer types are using Cyclistic bikes. But note that data-privacy issues prohibit you from using riders’ personally identifiable information. This means that you won’t be able to connect pass purchases to credit card numbers to determine if casual riders live in the Cyclistic service area or if they have purchased multiple single passes.
-#### Concerned Source Data
+#### Concerned Source Data  
 1. **Data Timeframe:** June 2022 to May 2023 (Past 1 year data)
 2. **Source Data Description and Structure:** 
 	1. The data is organized into individual .csv files, each corresponding to a specific month.
@@ -51,33 +51,32 @@ Note - This is public data that you can use to explore how different customer ty
 2. **Data Integration into 'combined_Table':** The data has been uploaded and consolidated into a unified table named 'combined_Table'. (To see the process of data upload and consolidation into a single table, please click [here](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/Cyclistic%20-%20Data%20collection%20and%20combination%20process%20in%20MySQL%20.md).)
 ## Data Observation 
 
-
-#### Size of Data (Rows & Column)
+#### Size of Data (Rows & Column)  
 ![Pasted image 20230724165105](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3d64d46d-2cdf-4bbc-a93f-a1cd0e8963de)
 
 There are 5829030 no of rows and 13 no of columns observed in 'combined_Table' table
 
-#### Data types of all columns in combined_table 
+#### Data types of all columns in combined_table  
 ![Pasted image 20230724145734](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/17ed2f6d-1598-48c5-9df3-9907cb629032)
 
 ### All Null and Blank values in combined_table
-#### No of Null Values in each columns
+#### No of Null Values in each columns  
 ![Pasted image 20230725152217](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/211ceae2-b25f-4e1b-a43b-b1958417636d)
 
-#### No of Blank Values in each columns
+#### No of Blank Values in each columns  
 ![Pasted image 20230725132207](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/48fb7409-7e9d-4373-8485-a8a2d22ec458)
 
-#### Total no of blank or null values in combined_Table table
+#### Total no of blank or null values in combined_Table table  
 ![Pasted image 20230725172601](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/09912011-8541-4fa8-ae04-9502b62d1b66)
 
-#### Percentage of Blank Values in each columns
+#### Percentage of Blank Values in each columns  
 ![Pasted image 20230725143231](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/f5399472-4b68-4b51-8b92-63893f4a0cb6)
 
-#### Total Percentage of Blank Values
+#### Total Percentage of Blank Values  
 ![Pasted image 20230725172313](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c13a920d-ea77-4813-86c7-cb61010de116)
 
 ### Checking Duplicates in combined_Table
-#### Count of total duplicate rows
+#### Count of total duplicate rows  
 ![image](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/e2757b96-10f6-4dd9-8c60-1f8e6f4572e2)
 
 ### Checking outlier or false data in combined_Table
@@ -108,15 +107,13 @@ Percent of rows including *'Total no of blank or null values'*, *'Outlier or fa
 	- Not Null
 - Primary Key constraints added in this field
 
-- Length of field:
-
+- Length of field:  
 ![Pasted image 20230728153059](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/9e085cd0-47ed-4c88-bfe2-714806748f52)
 
 ##### Characteristics and data format of Field 'rideable_type'
 - Data type: MEDIUMTEXT
 - Data format: Categorical
-- All Categories:
-
+- All Categories:  
 ![Pasted image 20230728152935](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/494c593d-7c45-4dab-9dff-f740f84cdd8a)
 
 ##### Characteristics and data format of Field 'started_at' & 'ended_at'
