@@ -48,7 +48,7 @@ Note - This is public data that you can use to explore how different customer ty
 	- While there are several tools available for data visualization, including Excel and Power BI, our selection of Tableau is deliberate. Tableau offers dynamic capabilities and a diverse range of visualization options, making it the ideal choice for our analytical and visualization needs.
 ### Data Loading
 1. **File Naming Convention:** Files are named in the format of YYYYMM-divvy.csv.
-2. **Data Integration into 'combined_Table':** The data has been uploaded and consolidated into a unified table named 'combined_Table'. (To see the process of data upload and consolidation into a single table, please click [here](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/Cyclistic%20-%20Data%20collection%20and%20combination%20process%20in%20MySQL%20.md).)
+2. **Data Integration into 'combined_Table':** The data has been uploaded and consolidated into a unified table named 'combined_Table'. (To see the process of data upload and consolidation into a single table, please [click here](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/Cyclistic%20-%20Data%20collection%20and%20combination%20process%20in%20MySQL%20.md).)
 ### Data Observation 
 
 #### Size of Data (Rows & Column)  
