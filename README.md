@@ -154,4 +154,20 @@ Percent of rows including *'Total no of blank or null values'*, *'Outlier or fa
 
 Tableau Story Link: [Cyclistic Bike Share Analysis | June 22 to May 23](https://public.tableau.com/app/profile/ganesh.honrao/viz/CyclisticBikeShareAnalysisJune22toMay/Story1#2) 
 
+![Cyclistic data analysis report_page-0001](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/4285d48e-c1a4-4a77-beda-3c7cca72c9f7)  
+
+![Cyclistic data analysis report_page-0002](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/43f29275-1470-48ca-b631-f857bf5d3ed1)  
+
+![Cyclistic data analysis report_page-0003](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/97ec4810-8fa3-4a63-8f99-41bac9e93290)  
+
+![Cyclistic data analysis report_page-0004](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c228a5a8-eda3-4c90-b118-6086f7827a55)  
+
+![Cyclistic data analysis report_page-0005](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c64db1fc-4b2d-4b68-8dd4-aea86b8e2aab)  
+
+![Cyclistic data analysis report_page-0006](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/b1d41104-ef87-4719-979e-09e2a76ffca1)  
+
+![Cyclistic data analysis report_page-0007](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/8adfbe09-bd9c-4849-ad55-9a560d614c3b)  
+
+![Cyclistic data analysis report_page-0008](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/b429cd1c-5525-4e95-80e9-1b7e09b03054)  
+
 ---
