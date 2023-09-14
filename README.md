@@ -83,7 +83,8 @@ There are 5829030 no of rows and 13 no of columns observed in 'combined_Table' t
 
 ### Checking Duplicates in combined_Table
 #### Count of total duplicate rows  
-![image](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/0a191722-0d18-4974-9daa-6c0d0d778270)
+![2 5 2 Count of total duplicate rows](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/fc9d7328-1748-4f2f-a1e0-117373f6bd91)
+
 
 
 ### Checking outlier or false data in combined_Table
