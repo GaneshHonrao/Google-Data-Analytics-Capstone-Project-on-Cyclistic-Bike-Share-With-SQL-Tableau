@@ -52,49 +52,59 @@ Note - This is public data that you can use to explore how different customer ty
 ### Data Observation 
 [Data Observation SQL Queries](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/blob/main/2.%20Cyclistic%20-%20Data%20Observation%20SQL%20Queries.md)
 #### Size of Data (Rows & Column)  
-![Pasted image 20230724165105](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3d64d46d-2cdf-4bbc-a93f-a1cd0e8963de)
+![Pasted image 20230724165105](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/2190999f-8d8c-471c-a033-ea73e6a54ec4)
+
 
 There are 5829030 no of rows and 13 no of columns observed in 'combined_Table' table
 
 #### Data types of all columns in combined_table  
-![Pasted image 20230724145734](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/17ed2f6d-1598-48c5-9df3-9907cb629032)
+![Pasted image 20230724145734](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/7b804dfc-5859-4f95-be2c-776e882bf513)
+
 
 ### All Null and Blank values in combined_table
 #### No of Null Values in each columns  
-![Pasted image 20230725152217](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/211ceae2-b25f-4e1b-a43b-b1958417636d)
+![image](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/0a191722-0d18-4974-9daa-6c0d0d778270)
 
 #### No of Blank Values in each columns  
-![Pasted image 20230725132207](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/48fb7409-7e9d-4373-8485-a8a2d22ec458)
+![Pasted image 20230725132207](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/9eb55bb4-202b-4783-82ca-e767d55b93ca)
+
 
 #### Total no of blank or null values in combined_Table table  
-![Pasted image 20230725172601](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/09912011-8541-4fa8-ae04-9502b62d1b66)
+![Pasted image 20230725172601](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/f7aff68d-fe00-4530-bbc3-f1d7ceb804e3)
+
 
 #### Percentage of Blank Values in each columns  
-![Pasted image 20230725143231](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/f5399472-4b68-4b51-8b92-63893f4a0cb6)
+![Pasted image 20230725143231](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/73cf4be0-3d3a-4540-912a-de4b9414af19)
+
 
 #### Total Percentage of Blank Values  
-![Pasted image 20230725172313](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c13a920d-ea77-4813-86c7-cb61010de116)
+![Pasted image 20230725172313](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/a96f5a27-c227-4193-ae2a-da6dbc670b9d)
+
 
 ### Checking Duplicates in combined_Table
 #### Count of total duplicate rows  
-![image](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/e2757b96-10f6-4dd9-8c60-1f8e6f4572e2)
+![image](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/0a191722-0d18-4974-9daa-6c0d0d778270)
+
 
 ### Checking outlier or false data in combined_Table
 #### Outlier or false value in ride length (ended_at - started_at)
 - **Longer than a day**  
-![Pasted image 20230731153601](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/711e9c1e-4b1a-4e10-9e75-ced266aabf11)
+![Pasted image 20230731153601](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/baf85bb7-59ee-44c4-b2f4-cbca24f59024)
+
 
 - **Less than a minute**  
-![Pasted image 20230731153704](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/756f26ff-acb3-4606-bd5f-faec6fff2bda)
+![Pasted image 20230731153704](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/7d57aa3f-5bae-41ae-8a2b-83c2b1361e74)
+
 
 ### Total count and percent of inconsistent values
 - **Total inconsistent values count**  
 Total count of rows including *'Total no of blank or null values'*, *'Outlier or false value of ride length longer than a day'* and *'Outlier or false value of ride length less than a minute'*.  
-![Pasted image 20230731154619](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3c9f6184-3312-4042-889c-033fb9b34f72)
+![Pasted image 20230731154619](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/f3832e5e-c41e-4ac9-8728-5abb2fa1fe49)
+
 
 - **Total inconsistent values percentage**  
 Percent of rows including *'Total no of blank or null values'*, *'Outlier or false value of ride length longer than a day'* and *'Outlier or false value of ride length less than a minute'*.  
-![Pasted image 20230731155116](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/18f299df-e773-4cd9-a898-4e0e8ac99b1f)
+![Pasted image 20230731155116](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/7c88be66-4090-487a-b14d-ccee9028d51b)
 
 
 ---
@@ -108,13 +118,13 @@ Percent of rows including *'Total no of blank or null values'*, *'Outlier or fa
 - Primary Key constraints added in this field
 
 - Length of field:  
-![Pasted image 20230728153059](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/9e085cd0-47ed-4c88-bfe2-714806748f52)
+![Pasted image 20230728153059](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/3940cd28-7a9f-40c4-9c8d-3b38fd7c519c)
 
 ##### Characteristics and data format of Field 'rideable_type'
 - Data type: MEDIUMTEXT
 - Data format: Categorical
 - All Categories:  
-![Pasted image 20230728152935](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/494c593d-7c45-4dab-9dff-f740f84cdd8a)
+![Pasted image 20230728152935](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/570904e8-21a0-4bc4-a976-03df42a7b7d5)
 
 ##### Characteristics and data format of Field 'started_at' & 'ended_at'
 - Data type: DATETIME -- (YYYY-MM-DD hh:mm:ss)
@@ -131,7 +141,7 @@ Percent of rows including *'Total no of blank or null values'*, *'Outlier or fa
 - Data type: MEDIUMTEXT
 - Data format: Categorical
 - All Categories:  
-![Pasted image 20230728152823](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/98750b6c-83a2-4126-9e78-44a4a6a00df4)
+![Pasted image 20230728152823](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/8b4b254e-a487-43ca-b1ce-120785033d61)
 
 
 ---
@@ -154,20 +164,20 @@ Percent of rows including *'Total no of blank or null values'*, *'Outlier or fa
 
 Tableau Story Link: [Cyclistic Bike Share Analysis | June 22 to May 23](https://public.tableau.com/app/profile/ganesh.honrao/viz/CyclisticBikeShareAnalysisJune22toMay/Story1#2) 
 
-![Cyclistic data analysis report_page-0001](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/4285d48e-c1a4-4a77-beda-3c7cca72c9f7)  
+![Cyclistic data analysis report_page-0001](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/ecb654f3-b807-49ed-ae0d-76df8a7f996c)  
 
-![Cyclistic data analysis report_page-0002](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/43f29275-1470-48ca-b631-f857bf5d3ed1)  
+![Cyclistic data analysis report_page-0002](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/e68b3171-7461-4de1-acec-58c13f498da2)  
 
-![Cyclistic data analysis report_page-0003](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/97ec4810-8fa3-4a63-8f99-41bac9e93290)  
+![Cyclistic data analysis report_page-0003](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c5c9f259-cbe5-406a-8bd6-cb10599471a1)  
 
-![Cyclistic data analysis report_page-0004](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c228a5a8-eda3-4c90-b118-6086f7827a55)  
+![Cyclistic data analysis report_page-0004](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/68318c32-eff5-4024-92da-aa5d46e9c35d)  
 
-![Cyclistic data analysis report_page-0005](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/c64db1fc-4b2d-4b68-8dd4-aea86b8e2aab)  
+![Cyclistic data analysis report_page-0005](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/9e88da7b-ba68-4a33-87fe-720361b247c8)  
 
-![Cyclistic data analysis report_page-0006](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/b1d41104-ef87-4719-979e-09e2a76ffca1)  
+![Cyclistic data analysis report_page-0006](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/fee57dc6-5842-4e88-a24d-1bb76f94fed8)  
 
-![Cyclistic data analysis report_page-0007](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/8adfbe09-bd9c-4849-ad55-9a560d614c3b)  
+![Cyclistic data analysis report_page-0007](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/aa1d128c-f36d-44d2-aa8e-e47b39fb6462)  
 
-![Cyclistic data analysis report_page-0008](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/b429cd1c-5525-4e95-80e9-1b7e09b03054)  
+![Cyclistic data analysis report_page-0008](https://github.com/GaneshHonrao/Google-Data-Analytics-Capstone-Project-on-Cyclistic-Bike-Share-With-SQL-Tableau/assets/144705832/2149b088-f840-4804-b8f7-fc2dae8ee491)  
 
 ---
